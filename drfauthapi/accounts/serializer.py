@@ -26,3 +26,11 @@ class CustomerLoginSerializer(serializers.ModelSerializer):
     class Meta:
         model = Customer
         fields = ['email','password']
+
+class CustomerProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Customer
+        fields = ['id','email','name']
+
+
+
